@@ -1,0 +1,21 @@
+﻿CHAR = VARCHAR(4000 ky tu)
+CHAR -> fixed string (egc: CMND) -> if string have not enough letters, 
+computer will auto add more letters util enough.
+VARCHAR -> flexible string (egc: Name)
+TEXT: big data (egc: news)
+
+BIT: 0 or 1 (egc: gender)
+FLOAT in sql = double in java
+MONEY: giant float number data type
+IMAGE: giant data type (egc: about NASA)
+
+When delete database in Sql Server, you have to change to use another project and drop database to successfully
+When sql command, N'[string]' -> N is unicode font
+Table creation should be named plural(số nhiều), in table be named few(số ít)
+
+ON DELETE SET DEFAULT: when delete record in parent table, child table have relationship will set record data at default (egc: 'MOB')
+ON UPDATE CASCADE: when update parent table, foreign key at child table will automatically update accordingly.
+... SET NULL: same as SET DEFAULT but default variable will be set at NULL
+... NO ACTION: when delete data record in parent table, computer prevent deletion
+
+JDBCStatement: remember to copy sqljdbc4 file into lib folder at WEB-INF folder
